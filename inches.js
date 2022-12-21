@@ -2,7 +2,7 @@ let bustMeasure = 47;
 let stGauge = 24;
 let trueFit = (bustMeasure / 4) * stGauge;
 
-let ease = -2;
+let ease = 2;
 let easeGauge = ease * 4
 
 totalSts = Math.ceil(trueFit + easeGauge);
