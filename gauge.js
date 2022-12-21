@@ -11,7 +11,8 @@ let ease = 0;
 let easeGaugeIn = ease * 4;
 let easeGaugeCm = ease * 10;
 
-totalStsIn = Math.ceil(trueFitIn + easeGaugeIn);
-totalStsCm = Math.ceil(trueFitCm + easeGaugeCm);
+totalSts = Math.ceil(trueFitIn + easeGaugeIn);
 
-console.log(`Cast on ${totalStsIn} / ${totalStsCm} stitches.`)
+castOnSts = Math.ceil(totalSts * .4);
+
+document.getElementById("cast-on").innerHTML = (`${castOnSts} sts`);

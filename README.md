@@ -1,6 +1,6 @@
 # ![sweater weather!](/assets/MCDWHHA_EC025.jpg "when harry met sally")
 
-A simple `.js` calculator based on Elizabeth Zimmermann's seamless sweater percentage system described in *Knitting Without Tears*. 
+A simple `.js` calculator based on Elizabeth Zimmermann's seamless sweater percentage system described in *Knitting Without Tears* and on [KnitPicks](https://tutorials.knitpicks.com/percentage-system/). 
 
 ## to-do
 - no clue how to do user input!

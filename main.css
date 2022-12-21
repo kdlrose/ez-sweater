@@ -29,3 +29,12 @@ img {
     display:block;
     margin:auto;
 }
+
+span#cast-on {
+    font-weight:bold;
+    color:#ea76cb;
+}
+
+ol {
+    text-align:justify;
+}
