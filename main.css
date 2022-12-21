@@ -1,30 +1,41 @@
 body {
-    background-color:#dc8a78;
+    background-color:#e6e9ef;
     color:#4c4f69;
     font-family: 'Hanken Grotesk', 'Helvetica', sans-serif;
-    font-size:18px;
+    font-size:16px;
     line-height:1.5;
-    text-align:center;
+    text-align:justify;
 }
 
 div {
     margin:auto;
-    background-color:#eff1f5;
+    border:.01em solid #4c4f69;
     padding:4%;
     margin:4% auto;
     width:min-content;
 }
 
 a:link, a:visited, a:active {
-    color:#7287fd;
+    color:#dd7878;
 }
 
 h1 {
-    color:#04a5e5;
+    color:#ea76cb;
     font-weight:normal;
     font-family: 'Press Start 2P', cursive;
     font-size:1.25em;
+    margin:2em auto 1em;
+    text-align:center;
+    text-transform:lowercase;
+}
+
+h2 {
+    color:#209fb5;
+    font-weight:normal;
+    font-family: 'Press Start 2P', cursive;
+    font-size:.75em;
     margin:1em auto;
+    text-transform:uppercase;
 }
 
 img {
@@ -32,13 +43,18 @@ img {
     margin:auto;
 }
 
-span#cast-on {
+strong {
     font-weight:bold;
-    color:#ea76cb;
+    color:#7287fd;
 }
 
 ul, ol {
     text-align:justify;
+}
+
+li {
+    margin:.5em 0 .5em -1em;
+    padding-left:.25em;
 }
 
 #top-down-raglan {
