@@ -1,8 +1,7 @@
 body {
     background-color:#dc8a78;
     color:#4c4f69;
-    font-family: 'Latin Modern Mono', 'Courier New', Courier, monospace;
-    font-style:italic;
+    font-family: 'Hanken Grotesk', 'Helvetica', sans-serif;
     font-size:18px;
     line-height:1.5;
     text-align:center;
@@ -23,6 +22,9 @@ a:link, a:visited, a:active {
 h1 {
     color:#04a5e5;
     font-weight:normal;
+    font-family: 'Press Start 2P', cursive;
+    font-size:1.25em;
+    margin:1em auto;
 }
 
 img {
@@ -35,6 +37,10 @@ span#cast-on {
     color:#ea76cb;
 }
 
-ol {
+ul, ol {
+    text-align:justify;
+}
+
+#top-down-raglan {
     text-align:justify;
 }
