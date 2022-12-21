@@ -28,6 +28,7 @@ armpit =  sleeveStart / 2;
 
 document.getElementById("top-down-raglan").innerHTML = (`
 <h1>Top-down raglan</h1>
+<p>For a raglan sweater, I recommend starting with 6 stitch markers, two of which should be unique for beginning of round and the middle of the chest.</p>
 <ol>
     <li>Cast on <strong>${neckSts} sts</strong>, join in round, pm for BOR.</li>
     <li>Setup: <strong>k${backHalf}</strong>, pm, <strong>k${sleeveStart}</strong>, pm, <strong>k${backHalf}</strong>, pm for middle of chest, <strong>k${backHalf}</strong>, pm, <strong>k${sleeveStart}</strong>, pm, <strong>k${backHalf}</strong>.</li>
