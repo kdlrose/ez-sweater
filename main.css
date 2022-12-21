@@ -50,6 +50,7 @@ strong {
 
 ul, ol {
     text-align:justify;
+    margin:1.5em auto;
 }
 
 li {
