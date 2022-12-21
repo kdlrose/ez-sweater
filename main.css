@@ -19,11 +19,12 @@ blockquote {
 }
 
 strong {
-    color:#209fb5;
+    color:#7287fd;
 }
 
 h1 {
     color:#7287fd;
+    text-align:center;
 }
 
 h2 {
@@ -43,4 +44,8 @@ img {
 ol, li, blockquote {
     text-align:justify;
     margin:.75em auto;
+}
+
+p {
+    text-align:center;
 }
