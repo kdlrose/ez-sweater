@@ -2,11 +2,12 @@
 
 A simple `.js` calculator based on Elizabeth Zimmermann's seamless sweater percentage system described in *Knitting Without Tears*. 
 
-Running list of IDK's:
+## to-do
 - no clue how to do user input!
   - `promptInt()`?
-  - The only three numbers the user has to provide are true bust circumference, horizontal stitch gaze, and desired ease.
-- how to fork in the road:
+  - the only three numbers the user has to provide are true bust circumference, horizontal stitch gaze, and desired ease
+  - looking at `.js` forms but it also feels like a `.php` game lol
+- choose your own adventure:
   - for inches/centimeters
   - for top-down or bottom-up
   - for circular yoke vs. raglan
