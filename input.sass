@@ -1,0 +1,32 @@
+@import latte
+
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital@0;1&display=swap')    
+
+html
+    border: 1em solid $mauve
+    min-height: fit-content
+    overflow-wrap: break-word
+
+body
+    background-color: $base
+    color: $mauve
+    font-family: 'Chivo Mono', monospace
+    font-size:18px
+    line-height: 1.5
+
+section
+    max-width: 600px
+    margin: 3em auto
+
+blockquote
+    width: 60%
+    margin: 3em auto
+    font-size:2em
+
+a
+    color: inherit
+    border-bottom: .15em solid $peach
+    text-decoration: none
+
+    &:hover
+        border-bottom: .15em solid $yellow
