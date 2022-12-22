@@ -1,14 +1,11 @@
 # ![sweater weather!](/assets/MCDWHHA_EC025.jpg "when harry met sally")
 
-A simple `.js`-powered seamless sweater pattern generator based on [Elizabeth Zimmermann's percentages](https://tutorials.knitpicks.com/percentage-system/).
+Knitting and code both scratch the math brain and can really only be learnt by doing, so in that spirit: a simple `.js`-powered generator based on [Elizabeth Zimmermann's sweater percentages](https://tutorials.knitpicks.com/percentage-system/). From *Knitting without Tears*, 1971:
+>You may wish to change the percentages a bit to suit your taste, or the shape of the wearer. Feel free. I shall have failed in my endeavor if you copy my designs too slavishly; they are intended only as a guide, so be your own designer. No two people knit alike, look alike, think alike; why should their projects be alike? Your sweater should be like your own favorite original recipes—like nobody else’s on earth.
+>And a good thing too.
 
-## to-do
-- no clue how to do user input!
-  - `promptInt()`?
-  - the only three numbers the user has to provide are true bust circumference, horizontal stitch gaze, and desired ease
-  - looking at `.js` forms but it also feels like a `.php` game lol
-- choose your own adventure:
-  - inches/centimeters
-  - top-down or bottom-up
-  - for circular yoke vs. raglan
--  I'm putting in short rows idc!! they're skippable, we can make them skippable
+This is also me challenging myself not to procrastinate with CSS.
+
+## tasks
+- learn functions, lol
+- user input
