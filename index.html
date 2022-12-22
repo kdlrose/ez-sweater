@@ -4,20 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sweater calculator</title>
+    <title>EPS - Elizabeth's Percentage System</title>
 
     <link rel="stylesheet" href="main.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,400;0,700;1,400;1,700&family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="intro">
-        <h1>EZ seamless sweater calculator</h1>
-        <p>from that great witch Elizabeth Zimmermann's <em>The Opinionated Knitter</em> (Schoolhouse Press, 2005)</p>
-        <sub>this is a lil javascript newbie's <a href="https://github.com/kdlrose/sweater-curse">work in progress</a></sub>
-    </div>
-    <div id="calc">
-        <h1>get gauge</h1>
+    <section>
+        <p class="big-boy">The great knitting witch Elizabeth Zimmermann isn't known for hand-holding, step-by-step patterns that hawk $200 in wool and silk mohair, but insightful, wry, no-bullshit prose guidance.</p>
+
+        <p>For her sweaters—seamed and seamless, top down and bottom-up—she repeatedly returned to a set of numbers known as "Elizabeth's Percentage System." All anyone needs to knit a sweater is horizontal stitch gauge and bust circumference.</p>
+    <figure>
+        <img src="assets/EZ.jpeg">
+        <figcaption>Elizabeth Zimmermann</figcaption>
+    </figure>
+       <p><sup>Puck Furdue, but</sup> A fantastic <a href="https://docs.lib.purdue.edu/cgi/viewcontent.cgi?article=2000&context=open_access_dissertations">PhD disseration by Maureen Lilly Marsh</a> locates Zimmermann's public career as a knitting teacher in the most interesting chunk of the 20th century.</p>
+    </section>
+    <section>
+        <h1>Get Gauge</h1>
+        <figure>
+            <blockquote>You <em>must</em> make a swatch before casting on a project to see what your own <strong>gauge</strong> is. I know this is a hateful job, so why not make a larger swatch, and call it a cap?
+                <cite>Knitting Without Tears</cite>
+            </blockquote>
+        </figure>
+ 
         <form>
             <p>
                 <label for="preferredUnit">Unit of measure:</label>
@@ -40,10 +51,26 @@
             </p>
         </form>
         <button>poggerz</button>
-    </div>
-    <div id="patt">
-        <p id="top-down-raglan"></p>
-    </div>
+    </section>
+    <section id="your-stitches">
+        <h1>Your stitch counts</h1>
+        <table>
+            <tr>
+                <td>Body:</td>
+                <td id="body-sts"></td>
+            </tr>
+            <tr>
+                <td>Neck:</td>
+                <td id="neck-sts"></td>
+            </tr>
+            <tr>
+                <td>Sleeve:</td>
+                <td id="sleeve-sts"></td>
+            </tr>
+        </table>
+
+
+    </section>
     <script src="gauge.js"></script>
 </body>
 </html>

@@ -1,61 +1,31 @@
-// for 4in or 10cm
-let stGauge = 28;
-let ease = -2;
+const gauge = 28;
+const bust = 120;
+const ease = 5;
 
-// inches
-let bustMeasureIn = 47;
-noEaseIn = (bustMeasureIn / 4) * stGauge;
-let easeGaugeIn = ease * 4;
+finalMeasure = bust + ease;
 
-// centimeters
-let bustMeasureCm = 120;
-noEaseCm = (bustMeasureCm / 10) * stGauge;
-let easeGaugeCm = ease * 10;
+increasedMeasure = Math.ceil(finalMeasure * 1.33);
 
-bodySts = Math.round(noEaseIn + easeGaugeIn);
+// by stitches
+trueSts = 2 * Math.ceil(gauge * (bust / 10) / 2);
+easeSts = 2 * Math.ceil(gauge * (ease / 10) / 2);
+bodySts = trueSts + easeSts;
+increasedSts = 2 * Math.ceil(gauge * (increasedMeasure / 10) / 2);
 
-// can I make bodySts use either unit!!!
-neckSts = Math.round(bodySts * .4);
-chest = Math.round(neckSts * .3);
-backHalf = Math.round(chest / 2);
-sleeveStart = Math.round(neckSts * .2);
+// neck by cm
+neckC = finalMeasure * .4;
+shoulderWidth = neckC * .2;
+chestWidth = neckC * .3;
 
-// EPs magic, same numbers for raglan and yoke but the increase fashion is all that differs!
-tsIncreased = Math.round(bodySts * 1.33);
-chestIncreased = Math.round(tsIncreased * .3);
-backIncreased = Math.round(chestIncreased / 2);
-sleeveIncreased = Math.round(tsIncreased * .2);
-armpit =  sleeveStart / 2;
+// neck by stitches
+neckSts = 2 * Math.ceil(gauge * (neckC / 10) / 2);
+shoulderSts = 2 * Math.ceil(gauge * (shoulderWidth / 10) / 2);
+chestSts = 2 * Math.ceil(gauge * (chestWidth / 10) / 2);
+backSts = chestSts / 2;
 
-document.getElementById("top-down-raglan").innerHTML = (`
-<h1>Top-down raglan</h1>
-<p>For a raglan sweater, I recommend starting with 6 stitch markers, two of which should be unique for beginning of round and the middle of the chest.</p>
-<ol>
-    <li>Cast on <strong>${neckSts} sts</strong>, join in round, pm for BOR.</li>
-    <li>Setup: <strong>k${backHalf}</strong>, pm, <strong>k${sleeveStart}</strong>, pm, <strong>k${backHalf}</strong>, pm for middle of chest, <strong>k${backHalf}</strong>, pm, <strong>k${sleeveStart}</strong>, pm, <strong>k${backHalf}</strong>.</li>
-</ol>
+console.log(`For a ${finalMeasure} cm sweater with ${gauge} sts per 10 cm, the body stitch count should be ${bodySts} sts.
 
-<h2>Raglan increases</h2>
-<ol>
-    <li>Round 1: k to end of round.</li>
-    <li>Round 2: <strong>*k to 1 st before m, m1R, sm, k1, m1L*</strong>, repeat from ** three more times, k to end of round. Continue these increases through short row shaping.</li>
-    <li>German short rows:
-        <ul>
-            <li>k to 2 sts past the second right sleeve marker. Turn your work so WS is facing.</li>
-            <li>sl1wyif to the right needle, pull up the stitch so your yarn is in back.</li>
-            <li>p to 1 st before the next marker, m1Rp, sm, p1, m1Lp, p across sleeve, repeate increase, p2, repeat GSR.</li>
-            <li>work until there are like, 2 inches to the middle of chest marker on either side, idk.</li>
-            <li>Remove the middle of chest sm.
-        </ul>
-    </li>
-    <li>Repeat rounds 1-2 until total st count is <strong>${tsIncreased}</strong>. This should add up to <strong>${backIncreased} sts</strong> from BOR; <strong>${sleeveIncreased} sts</strong> for the right sleeve; <strong>${chestIncreased} sts</strong> for the chest; <strong>${sleeveIncreased} sts</strong> for the left sleeve; and  <strong>${backIncreased} sts</strong> to end of round.</li>
-    <li>Split for sleeves: k to first marker, thread your right sleeve sts onto waste yarn, CO <strong>${armpit} sts</strong> using the backwards loop cast-on. Repeat for left sleeve.</li>
-</ol>
-
-<h2>Finishing</h2>
-<ol>
-    <li>Knit body to your desired length and finish with 1x1 rib.</li>
-    <li>Picking up sleeves: Starting in the middle of your armpit cast on, pick up half of your backwards loop CO sts, replace held sleeve sts onto your needle, pick up the back half of your backward loop CO, pm for BOR.</li>
-    <li>Collar: Pick up <strong>${neckSts} sts</strong> from your cast on edge, k1 p1 to your heart's content, bind off with a stretchy bind-off.</li>
-</ol>
-`)
+Neck: ${neckC} cm = ${neckSts} sts
+Shoulder: ${shoulderWidth} cm = ${shoulderSts} sts
+Chest and Back: ${chestWidth} = ${chestSts} sts
+Widest circumference: ${increasedMeasure} cm = ${increasedSts} sts`)
