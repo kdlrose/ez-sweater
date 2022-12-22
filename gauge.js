@@ -12,18 +12,19 @@ let bustMeasureCm = 120;
 noEaseCm = (bustMeasureCm / 10) * stGauge;
 let easeGaugeCm = ease * 10;
 
-// can I make totalSts use either unit!!!
-totalSts = 2 * Math.round((noEaseIn + easeGaugeIn) / 2);
-neckSts = 2 * Math.round((totalSts * .4) / 2);
-chest = 2 * Math.round((neckSts * .3) / 2);
-backHalf = 2 * Math.round((chest / 2) / 2);
+bodySts = Math.round(noEaseIn + easeGaugeIn);
+
+// can I make bodySts use either unit!!!
+neckSts = Math.round(bodySts * .4);
+chest = Math.round(neckSts * .3);
+backHalf = Math.round(chest / 2);
+sleeveStart = Math.round(neckSts * .2);
 
 // EPs magic, same numbers for raglan and yoke but the increase fashion is all that differs!
-sleeveStart = 2 * Math.round((neckSts * .2) / 2);
-tsIncreased = 2 * Math.round((neckSts * 1.4) / 2);
-chestIncreased = 2 * Math.round((tsIncreased * .3) / 2);
-backIncreased = 2 * Math.round((chestIncreased / 2) / 2);
-sleeveIncreased = 2 * Math.round((tsIncreased * .2) / 2);
+tsIncreased = Math.round(bodySts * 1.33);
+chestIncreased = Math.round(tsIncreased * .3);
+backIncreased = Math.round(chestIncreased / 2);
+sleeveIncreased = Math.round(tsIncreased * .2);
 armpit =  sleeveStart / 2;
 
 document.getElementById("top-down-raglan").innerHTML = (`
