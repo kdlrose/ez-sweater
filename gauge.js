@@ -1,6 +1,6 @@
 const gauge = 28;
 const bust = 120;
-const ease = 5;
+const ease = -5;
 
 finalMeasure = bust + ease;
 
@@ -28,4 +28,5 @@ console.log(`For a ${finalMeasure} cm sweater with ${gauge} sts per 10 cm, the b
 Neck: ${neckC} cm = ${neckSts} sts
 Shoulder: ${shoulderWidth} cm = ${shoulderSts} sts
 Chest and Back: ${chestWidth} = ${chestSts} sts
+
 Widest circumference: ${increasedMeasure} cm = ${increasedSts} sts`)
