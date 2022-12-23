@@ -1,21 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Chivo+Mono:ital@0;1&display=swap");
 html {
-  border: 1em solid #8839ef;
+  border: 1em solid #ca9ee6;
   min-height: fit-content;
   overflow-wrap: break-word;
 }
 
 body {
-  background-color: #eff1f5;
-  color: #8839ef;
+  background-color: #303446;
+  color: #ca9ee6;
   font-family: "Chivo Mono", monospace;
   font-size: 18px;
   line-height: 1.5;
 }
 
-section {
+section, figure {
   max-width: 600px;
   margin: 3em auto;
+}
+
+img {
+  width: 100%;
+  text-align: center;
 }
 
 blockquote {
@@ -24,13 +29,24 @@ blockquote {
   font-size: 2em;
 }
 
+cite, figcaption {
+  display: block;
+  margin: 1.5em 0;
+  color: #babbf1;
+  font-size: 0.7em;
+}
+
 a {
   color: inherit;
-  border-bottom: 0.15em solid #fe640b;
+  border-bottom: 0.2em solid #ef9f76;
   text-decoration: none;
 }
 a:hover {
-  border-bottom: 0.15em solid #df8e1d;
+  border-bottom: 0.2em solid #a6d189;
+}
+
+.hero {
+  font-size: 1.5em;
 }
 
 /*# sourceMappingURL=output.css.map */
