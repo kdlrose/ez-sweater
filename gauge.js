@@ -27,6 +27,5 @@ halfBack = chestSts / 2;
 // print
 console.log(`
 For a ${finalMeasure} cm sweater with 10 cm = ${gauge} sts, the body stitch count should be ${bodySts} sts.
-
 Top down: ${neckSts} neck sts = ${halfBack} sts from middle of back + ${shoulderSts} L shoulder sts + ${chestSts} chest sts + ${shoulderSts} R shoulder sts + ${halfBack} sts.
 `)
